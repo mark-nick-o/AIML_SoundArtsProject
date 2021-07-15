@@ -12,7 +12,7 @@ to run the rest server you need to install the libraries or use the binary (whic
 
 compile
 =======
-command #> g++-7 -std=c++17 webserver_rest2.cpp -o webserver_rest2 -lhttpserver
+command #> g++-7 -std=c++17 rest_webserver.cpp -o webserver_rest2 -lhttpserver
 
 run
 ======
