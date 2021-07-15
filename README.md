@@ -8,3 +8,18 @@ you can communicate via the @blueSparrow_bot http://t.me/blueSparrow_bot
 
 if you start the google colab you can experiment by sending the bot commands via the blueSparrow messanger once you have came to the end of the spreadsheet, I will hope to host this application and some more before the end of the project but it is possible during test to example the machine learning and test out the applications.
 
+to run the rest server you need to install the libraries or use the binary (which has been made for ubuntu linux) then make the executable
+
+compile
+=======
+command #> g++-7 -std=c++17 webserver_rest2.cpp -o webserver_rest2 -lhttpserver
+
+run
+======
+command #>  ./webserver_rest2
+
+load a single file for test
+===========================
+command #> ./rest_server_test.sh https://soundcloud.com/ringroserecords/in2u
+
+(very shortly a loader will be provided that loads all the files that make up the arts project and this will correspond to the json file or BOT_CONFIG provided) 
