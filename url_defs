@@ -54,7 +54,7 @@
 #java https://militants-of-funk.tripod.com/jbox/fu1.htm
 #java https://militants-of-funk.tripod.com/jbox/l2.htm
 #java https://militants-of-funk.tripod.com/jbox/l3.htm
-#java https://militants-of-funk.tripod.com/about/main.htm
+#java#speak https://militants-of-funk.tripod.com/about/main.htm
 #java#vrml https://militants-of-funk.tripod.com/jbox/Rose2000-2.wrl
 #java#vrml https://militants-of-funk.tripod.com/jbox/Rose2000-3.wrl
 #java#flash https://militants-of-funk.tripod.com/
@@ -67,7 +67,10 @@
 #java#games http://rose2000.mysite.com/ufo/ufo.html
 #java http://rose2000.mysite.com/page5.htm
 #java http://rose2000.mysite.com/break/amazing.htm
-#java#speakingpage http://rose2000.mysite.com/militants/index.htm
+#java#speak http://rose2000.mysite.com/militants/index.htm
+#java#speak https://militants-of-funk.tripod.com/about/agent.htm
+#java#perl https://militants-of-funk.tripod.com/bbsOek/picture.cgi
+#java#art#drawing https://militants-of-funk.tripod.com/bbsOek/oekaki2.htm
 #guitar#funk https://www.dailymotion.com/video/x5lv8om
 #house#techno#garage https://www.dailymotion.com/video/x2ssjnx
 #house#techno#art https://www.dailymotion.com/video/x5rs9ys
