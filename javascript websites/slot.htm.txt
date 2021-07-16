@@ -1,0 +1,619 @@
+<HTML><HEAD>
+
+<SCRIPT language=JavaScript1.2>
+
+var cursorpath="veg-tomato.gif";
+if (document.layers)
+{document.write("<LAYER NAME='PoInTeRs' LEFT=10 TOP=10><img src='"+cursorpath+"' width=115 height=137></LAYER>")}
+else if (document.all){document.write("<div id='pOiNtErS' style='position:absolute;top:10px;left:10px;width:115px;height:137px;z-index:50'><img src='"+cursorpath+"' width=115 height=137></div>")}
+
+count=-1;                                                     
+move=1;
+
+function Curve(){
+  abc=new Array(0,1,1,1,2,3,4,0,6,-1,-1,-1,-2,-3,-4,0,-6)
+  for (i=0; i < abc.length; i++)
+    {var C=Math.round(Math.random()*[i])}
+  howbend=abc[C];
+  setTimeout('Curve()',1900);
+  return howbend;
+}
+ypos=10;
+xpos=10;
+
+degree = 60;
+function MoveRandom(){
+PathBend=degree+=howbend;//ok!
+y = 4*Math.sin(PathBend*Math.PI/180);
+x = 6*Math.cos(PathBend*Math.PI/180);
+if (document.layers){
+ypos+=y;
+xpos+=x;
+document.PoInTeRs.top=ypos+window.pageYOffset;
+document.PoInTeRs.left=xpos+window.pageXOffset;
+}
+else if (document.all){
+ypos+=y;
+xpos+=x;
+document.all.pOiNtErS.style.top=ypos+document.body.scrollTop;
+document.all.pOiNtErS.style.left=xpos+document.body.scrollLeft;
+}
+T=setTimeout('MoveRandom()',50);
+}
+function edges(){
+if (document.layers){
+if (document.PoInTeRs.left >= window.innerWidth-40+window.pageXOffset)degree=Math.round(Math.random()*45+157.5);
+if (document.PoInTeRs.top >= window.innerHeight-30+window.pageYOffset)degree=Math.round(Math.random()*45-112.5);
+if (document.PoInTeRs.top <= 2+window.pageYOffset) degree = Math.round(Math.random()*45+67.5);//OK!
+if (document.PoInTeRs.left <= 2+window.pageXOffset) degree = Math.round(Math.random()*45-22.5);//OK!
+}
+else if (document.all)
+{
+if (document.all.pOiNtErS.style.pixelLeft >= document.body.offsetWidth-45+document.body.scrollLeft)degree=Math.round(Math.random()*45+157.5);
+if (document.all.pOiNtErS.style.pixelTop >= document.body.offsetHeight-35+document.body.scrollTop)degree=Math.round(Math.random()*45-112.5);
+if (document.all.pOiNtErS.style.pixelTop <= 2+document.body.scrollTop) degree = Math.round(Math.random()*45+67.5);//OK!
+if (document.all.pOiNtErS.style.pixelLeft <= 2+document.body.scrollLeft) degree = Math.round(Math.random()*45-22.5);//OK!
+}
+setTimeout('edges()',100);
+}
+function starteffect(){
+  Curve();
+  MoveRandom();// onUnload="opener.gO()"
+  edges();
+}
+
+if (document.all||document.layers)
+window.onload=starteffect
+<!--
+coin = 50      
+bet = 1
+game = false   
+box1 = true
+box2 = true
+box3 = true
+num = Math.floor(Math.random() * 10)
+
+
+document.write('<center><IMG src="fruit-apple1.gif"><font size=6 color="#0000aa">rOse2000 Fruit Machine</font><IMG src="all.gif"></center>')
+
+IMG1 = " \n     BB\n    BBB\n   B BB\n     BB\n     BB\n     BB\n   BBBBBB "
+IMG2 = " \n    BBBB\n  BB    BB\n        BB\n       BB\n     BB\n   BB\n  BBBBBBBB "
+IMG3 = " \n    BBBB\n  BB    BB\n        BB\n    BBBBB\n        BB\n  BB    BB\n    BBBB "
+IMG4 = " \n      BB\n     BBB\n    B BB\n   B  BB\n  B   BB\n BBBBBBBBB\n      BB "
+IMG5 = " \n  BBBBBBB\n  B\n  B\n  BBBBBBB\n        BB\n  BB    BB\n    BBBB "
+IMG6 = " \n    BBBB\n  BB     B\n  B\n  BBBBBBB\n  BB    BB\n  BB    BB\n    BBBB "
+IMG7 = " \n BBBBBBBBB\n        BB\n       BB\n      BB\n     BB\n    B7\n   BB "
+IMG8 = " \n    BBBB\n  BB    BB\n  B      B\n   BBBBBB\n  BB    BB\n  BB    BB\n    BBBB "
+IMG9 = " \n   BBBBBB\n  BB    BB\n  BB    BB\n   BBBBBBB\n        BB\n       BB\n   BBBB "
+IMG0 = " \n   BBBBBB\n  BB    BB\n  BB    BB\n  BB    BB\n  BB    BB\n  BB    BB\n   BBBBBB "
+
+image = new Array(IMG1,IMG2,IMG3,IMG4,IMG5,IMG6,IMG7,IMG8,IMG9,IMG0)
+
+function haveIwon(){
+                if((document.form.first.value == 7) && (document.form.second.value == 7) && (document.form.third.value == 7)){
+                    coin += bet * 20; 
+                    document.form.pay_back.value="you won "+(bet*10)+" you now have "+coin+" coins"
+                }
+                else if((document.form.first.value == document.form.second.value) && (document.form.second.value == document.form.third.value) && (document.form.third.value.indexOf("7") >= 0)){
+                    coin += bet * 10; 
+                    document.form.pay_back.value="you won "+(bet*10)+" you now have "+coin+" coins"
+                }
+                else if((document.form.first.value == document.form.second.value) && (document.form.second.value == document.form.third.value)){
+                    coin += bet * 5; 
+                    document.form.pay_back.value="you won "+(bet*5)+" you now have "+coin+" coins";
+                }
+                else if((document.form.first.value == document.form.second.value) || (document.form.second.value == document.form.third.value)){
+                    coin += bet * 1; 
+                    document.form.pay_back.value="you won "+bet+" you now have "+coin+" coins";
+                } else {
+                    coin -= bet
+                    document.form.pay_back.value="your a looser - you have left "+coin+" coins";
+                }
+             game = false
+             box1 = true
+             box2 = true
+             box3 = true
+}
+
+function end(variable){
+        if(game == true){
+                if(variable == 1)box1 = false
+                if(variable == 2)box2 = false
+                if(variable == 3)box3 = false
+          }
+        if((box1 == false) && (box2 == false) && (box3 == false)){
+                clearTimeout(tid)
+                haveIwon()
+          }
+}
+
+function spin(){
+       
+       if(num == 10) num = 0
+       if(box1)document.form.first.value = image[num % 10]
+       if(box2)document.form.second.value = image[(num + 3) % 10]
+       if(box3)document.form.third.value = image[(num + 6) % 10]
+num += 1
+tid = setTimeout("spin()",60)  
+}
+
+function inCoin(){
+      if (document.forms[0].elements[6].options[0].selected) bet = 0;
+      else if (document.forms[0].elements[6].options[1].selected) bet = 1;
+      else if (document.forms[0].elements[6].options[2].selected) bet = 2;
+      else if (document.forms[0].elements[6].options[3].selected) bet = 3;
+      else if (document.forms[0].elements[6].options[4].selected) bet = 4;
+      else if (document.forms[0].elements[6].options[5].selected) bet = 5;
+
+      if((coin-bet) < 0){
+          document.form.pay_back.value="no bet - we don\'t give credit ..Sorry.. try a smaller ammount";
+          game = false
+        }
+      else if (bet > 0){
+          document.form.pay_back.value="You have left "+(coin-bet)+" coins You have bet "+bet+" - Click each reel to stop";
+          spin()
+        }
+      else {
+          document.form.pay_back.value="Please select your bet from the pulldown menu";
+          game = false
+      }
+       
+}
+
+function startGame(){
+   if(game == false){
+            game = true
+        if (coin <= 0){
+          document.form.pay_back.value="your bust - hit refresh to restart"
+           }else{
+          inCoin()
+         }
+     }
+}
+
+document.write('<center><form name="form"><textarea rows=8 cols=12 name="first"></textarea><textarea rows=8 cols=12 name="second"></textarea><textarea rows=8 cols=12 name="third"></textarea><br>')
+document.write('<input type="button" value="stop" name="firstb" onClick=end(1)>----------<input type="button" value="stop" name="secondb" onClick=end(2)>----------<input type="button" value="stop" name="thirdb" onClick=end(3)><br><br>')
+document.write('Place your bet  <SELECT NAME="select" SIZE="1"><OPTION>INSERT COIN(S)<OPTION>1 COIN<OPTION>2 COINS<OPTION>3 COINS<OPTION>4 COINS<OPTION>5 COINS</SELECT> <input type="button" value="  START  " onClick=startGame()><br><br>')
+document.write('<input type="text" size=60 name="pay_back"></form></center>')
+
+document.form.pay_back.value="Set your stake and press start to begin - You start with "+coin+" coins"
+status="To play first select your stake from the pulldown menu click start -- then hit stop on each reel ";
+//-->
+</SCRIPT>
+</HEAD>
+<body BGCOLOR=#00CC00 ><!--'"</title></head>-->
+
+<script type="text/javascript">
+//OwnerIQ
+var __oiq_pct = 50;
+if( __oiq_pct>=100 || Math.floor(Math.random()*100/(100-__oiq_pct)) > 0 ) {
+var _oiqq = _oiqq || [];
+_oiqq.push(['oiq_addPageBrand','Lycos']);
+_oiqq.push(['oiq_addPageCat','Internet > Websites']);
+_oiqq.push(['oiq_addPageLifecycle','Intend']);
+_oiqq.push(['oiq_doTag']);
+(function() {
+var oiq = document.createElement('script'); oiq.type = 'text/javascript'; oiq.async = true;
+oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
+})();
+}
+//Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-21402695-19']);
+_gaq.push(['_setDomainName','tripod.com']);
+_gaq.push(['_setCustomVar',1,'member_name','militants-of-funk',3]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//Lycos Init
+function getReferrer() {
+var all= this.document.cookie;
+if (all== '') return false;
+var cookie_name = 'REFERRER=';
+var start = all.lastIndexOf(cookie_name);
+if (start == -1) return false;
+start += cookie_name.length;
+var end = all.indexOf(';', start);
+if (end == -1) end = all.length;
+return all.substring(start, end);
+}
+function getQuery() {
+var rfr = getReferrer();
+if (rfr == '') return false;
+var q = extractQuery(rfr, 'yahoo.com', 'p=');
+if (q) return q;
+q = extractQuery(rfr, '', 'q=');
+return q ? q : "";
+}
+function extractQuery(full, site, q_param) {
+var start = full.lastIndexOf(site);
+if (start == -1) return false;
+start = full.lastIndexOf(q_param);
+if (start == -1) return false;
+start += q_param.length;
+var end = full.indexOf('&', start);
+if (end == -1) end = full.length;
+return unescape(full.substring(start, end)).split(" ").join("+");
+}
+function generateHref(atag, template){
+atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!'); 
+}
+var lycos_ad = Array();
+var lycos_onload_timer;
+var cm_role = "live";
+var cm_host = "tripod.lycos.com";
+var cm_taxid = "/memberembedded";
+var tripod_member_name = "militants-of-funk";
+var tripod_member_page = "militants-of-funk/fruit/slot.htm";
+var tripod_ratings_hash = "1626429910:63c45b9dc70215081887ea73e67b1747";
+
+var lycos_ad_category = {"dmoz":"shopping\/visual_arts","ontarget":"&CAT=shopping&L2CAT=visual%20arts","find_what":"in your house"};
+
+var lycos_ad_remote_addr = "209.202.244.9";
+var lycos_ad_www_server = "www.tripod.lycos.com";
+var lycos_ad_track_small = "";
+var lycos_ad_track_served = "";
+var lycos_search_query = getQuery();
+</script>
+
+<script type="text/javascript" src="https://scripts.lycos.com/catman/init.js"></script>
+
+<script type='text/javascript'>
+ var googletag = googletag || {};
+ googletag.cmd = googletag.cmd || [];
+ (function() {
+   var gads = document.createElement('script');
+   gads.async = true;
+   gads.type = 'text/javascript';
+   var useSSL = 'https:' == document.location.protocol;
+   gads.src = (useSSL ? 'https:' : 'http:') +
+     '//www.googletagservices.com/tag/js/gpt.js';
+   var node = document.getElementsByTagName('script')[0];
+   node.parentNode.insertBefore(gads, node);
+ })();
+</script>
+
+<script type='text/javascript'>
+ googletag.cmd.push(function() {
+   googletag.defineSlot('/95963596/TRI_300X250_dfp', [300, 250], 'div-gpt-ad-1450204159126-0').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_above_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-1').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_below_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-2').addService(googletag.pubads());
+   googletag.pubads().enableSingleRequest();
+   googletag.enableServices();
+ });
+</script>
+
+
+<script type="text/javascript"> 
+(function(isV)
+{
+    if( !isV )
+    {
+        return;
+    }
+    var adMgr = new AdManager();
+    var lycos_prod_set = adMgr.chooseProductSet();
+    var slots = ["leaderboard", "leaderboard2", "toolbar_image", "toolbar_text", "smallbox", "top_promo", "footer2", "slider"];
+    var adCat = this.lycos_ad_category;
+    adMgr.setForcedParam('page', (adCat && adCat.dmoz) ? adCat.dmoz : 'member');
+    if (this.lycos_search_query)
+    {
+        adMgr.setForcedParam("keyword", this.lycos_search_query);
+    } 
+    else if(adCat && adCat.find_what)
+    {
+        adMgr.setForcedParam('keyword', adCat.find_what);
+    }
+    
+    for (var s in slots)
+    {
+        var slot = slots[s];
+        if (adMgr.isSlotAvailable(slot))
+        {
+            this.lycos_ad[slot] = adMgr.getSlot(slot);
+        }
+    }
+
+    adMgr.renderHeader();
+    adMgr.renderFooter();
+}((function() {
+
+var w = 0, h = 0, minimumThreshold = 300;
+
+if (top == self)
+{
+    return true;
+}
+if (typeof(window.innerWidth) == 'number' )
+{
+    w = window.innerWidth;
+    h = window.innerHeight;
+}
+else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight))
+{
+    w = document.documentElement.clientWidth;
+    h = document.documentElement.clientHeight;
+}
+else if (document.body && (document.body.clientWidth || document.body.clientHeight))
+{
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
+}
+return ((w > minimumThreshold) && (h > minimumThreshold));
+}())));
+
+
+
+
+window.onload = function()
+{
+    var f = document.getElementById("FooterAd");
+    var b = document.getElementsByTagName("body")[0];
+    b.appendChild(f);
+    f.style.display = "block";
+    document.getElementById('lycosFooterAdiFrame').src = '/adm/ad/footerAd.iframe.html';
+    
+
+
+    
+    // DOM Inj Ad
+    (function(isTrellix)
+    {
+        var e = document.createElement('iframe');
+        e.style.border = '0';
+        e.style.margin = 0;
+        e.style.display = 'block';
+        e.style.cssFloat = 'right';
+        e.style.height = '254px';
+        e.style.overflow = 'hidden';
+        e.style.padding = 0;
+        e.style.width = '300px';
+
+
+        var isBlokedByDomain = function( href )
+        {
+            var blockedDomains = [
+                "ananyaporn13000.tripod.com",
+                "xxxpornxxx.tripod.com"
+            ];
+            var flag = false;
+            
+            for( var i=0; i<blockedDomains.length; i++ )
+            {
+                if( href.search( blockedDomains[ i ] ) >= 0 )
+                {
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+
+        var getMetaContent = function( metaName )
+        {
+            var metas = document.getElementsByTagName('meta');
+            for (i=0; i<metas.length; i++)
+            { 
+                if( metas[i].getAttribute("name") == metaName )
+                { 
+                    return metas[i].getAttribute("content"); 
+                } 
+            }
+            return false;
+        }
+        
+        var getCommentNodes = function(regexPattern)
+        {
+            var nodes = {};
+            var nodesA = [];
+            var preferredNodesList = ['a', 'c', 'b'];
+        
+            (function getNodesThatHaveComments(n, pattern)
+            {
+                if (n.hasChildNodes())
+                {
+                    if (n.tagName === 'IFRAME')
+                    {
+                        return false;
+                    }
+                    for (var i = 0; i < n.childNodes.length; i++)
+                    {
+                        if ((n.childNodes[i].nodeType === 8) && (pattern.test(n.childNodes[i].nodeValue)))
+                        {
+                            var areaName = pattern.exec(n.childNodes[i].nodeValue)[1];
+                            nodes[areaName] = n;
+                        }
+                        else if (n.childNodes[i].nodeType === 1)
+                        {
+                            getNodesThatHaveComments(n.childNodes[i], pattern);
+                        }
+                    }
+                }
+            }(document.body, regexPattern));
+
+            for (var i in preferredNodesList)
+            {
+                if (nodes[preferredNodesList[i]])
+                {
+                    if( isTrellix && nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode )
+                    {
+                        nodesA.push(nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode);
+                    }
+                    else
+                    {
+                        nodesA.push( nodes[preferredNodesList[i]] );
+                    }
+                }
+            }
+            return nodesA;
+        }
+        
+        
+        var properNode = null;
+        var areaNodes = getCommentNodes( new RegExp( '^area Type="area_(\\w+)"' ) );
+
+        for (var i = 0; i < areaNodes.length; i++)
+        {
+            var a = parseInt(getComputedStyle(areaNodes[i]).width);
+            if ((a >= 300) && (a <= 400))
+            {
+                properNode = areaNodes[i];
+                break;
+            }
+        }
+
+
+        var propertyName = getMetaContent("property") || false;
+        if( isTrellix && (properNode) )
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            properNode.insertBefore(e, properNode.firstChild);
+        }
+        else if( isTrellix && !( properNode ) ) // Slap the ad eventhought there is no alocated slot
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            e.style.cssFloat = 'none';
+            var cdiv = document.createElement('div');
+            cdiv.style = "width:300px;margin:10px auto;";
+            cdiv.appendChild( e );
+            b.insertBefore(cdiv, b.lastChild);
+        }
+        else if( !isBlokedByDomain( location.href ) )
+        {
+            var injF = document.createElement('iframe');
+            injF.style.border = '0';
+            injF.style.margin = 0;
+            injF.style.display = 'block';
+            injF.style.cssFloat = 'none';
+            injF.style.height = '254px';
+            injF.style.overflow = 'hidden';
+            injF.style.padding = 0;
+            injF.style.width = '300px';
+            injF.src = '/adm/ad/injectAd.iframe.html';
+
+            if( b && ( !isTrellix || ( typeof isTrellix == "undefined" ) ) ) // All other tripod props
+            {
+                var cdiv = document.createElement('div');
+                cdiv.style = "width:300px;margin:10px auto;";
+                cdiv.appendChild( injF );
+                b.insertBefore(cdiv, b.lastChild);
+            } 
+        }
+  }( document.isTrellix ));
+}
+
+</script>
+
+<div id="tb_container" style="background:#DFDCCF; border-bottom:1px solid #393939; position:relative; z-index:999999999!important">
+<!--form name="search" onSubmit="return searchit()" id='header_search' >
+<input type="text" placeholder="Search" size=30 name="search2" value="">
+<input type="button" value="Go!" onClick="searchit()">
+</form>
+<style>
+form#header_search {
+    width: 916px;
+    margin: 0 auto 8px;
+    position: relative;
+}
+
+
+form#header_search input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background: #F4F2E9;
+    border: 1px solid #BBB8B8;
+    transition: background-color 300ms ease-out,
+                color 300ms ease;
+}
+
+form#header_search input[type="text"] {
+    width: 100%;
+}
+form#header_search input[type="text"]:focus {
+    border-color: #A2D054;
+    background-color: #fff;
+    box-shadow: 0 0px 12px -4px #A2D054;
+}
+
+
+
+form#header_search input[type="button"] {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background: #DFDCCF;
+    color: #463734;
+    width: 125px;
+    cursor: pointer;
+    height: 38px;
+    border: none;
+}
+form#header_search input[type="text"]:focus ~ input[type='button']:hover,
+form#header_search input[type='button']:hover {
+    background-color: #A5CE56;
+    color: #fff;
+}
+form#header_search input[type="text"]:focus ~ input[type='button'] {
+    background-color: #52AEDF;
+    color: #fff;
+}
+
+</style>
+
+<script>
+function searchit(){
+    
+    // determine environment 
+    var search_env 
+    if (lycos_ad_www_server.indexOf(".pd.") > -1) {
+       search_env = 'http://search51.pd.lycos.com/a/';
+    } else if (lycos_ad_www_server.indexOf(".qa.") > -1) {
+       search_env = 'http://search51.qa.lycos.com/a/';
+    } else {
+       search_env = 'http://search51.lycos.com/a/';
+    }
+
+var search_term = encodeURIComponent(document.search.search2.value)
+var search_url = search_env+search_term;
+window.open(search_url);
+
+return false
+}
+</script-->
+<style>
+    .adCenterClass{margin:0 auto}
+</style>
+<div id="tb_ad" class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+
+<div id="ad_container" style="display:block!important; float:left; width:728px ">
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "leaderboard" in lycos_ad) {
+  document.write(lycos_ad['leaderboard']);
+}
+</script>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "slider" in lycos_ad) {
+  document.write(lycos_ad['slider']);
+}
+</script> <!-- added 7/22 -->
+<div id="FooterAd" style="background:#DFDCCF; border-top:1px solid #393939; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:90px!important"> 
+<div class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+<div id="footerAd_container" style="display:block!important; float:left; width:728px">
+<iframe id="lycosFooterAdiFrame" style="border:0; display:block; float:left; height:96px; overflow:hidden; padding:0; width:750px"></iframe>
+</div>
+</div>
+</div>
+
+
+<center><marquee>You win 20 times your stake for 777..... 10 times your stake for 3 in a row and over 7.... 5 times your stake for any three the same.... and you win your stake if the two numbers match in a row......</marquee></center>
+</body></HTML>
