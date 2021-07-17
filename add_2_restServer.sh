@@ -11,7 +11,6 @@ touch $FHOME/urls_added
 [ $# == 1 ] && [ "$1" == "DEL" ] && [ -f $FHOME/urls_errors ] && rm $FHOME/urls_errors
 touch $FHOME/urls_errors
 field=0
-read go
 for line in `cat $FHOME/url_defs`
 do
   if [ "$field" == 1 ]
