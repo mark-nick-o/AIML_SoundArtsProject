@@ -19,7 +19,6 @@ do
     url=$line
     reply=`$ADD2SERVER $url`
     numb=`echo $reply | awk '{ print $1}'`
-    tags=`echo $line | awk '{print $1}'`
     if [ "$numb" == -1 ]
     then
       echo "$url malformed ERROR" >> $FHOME/urls_errors
