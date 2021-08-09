@@ -1,0 +1,1 @@
+these scripts can be used to generate art
