@@ -26,6 +26,6 @@ command #> ./rest_server_test.sh https://soundcloud.com/ringroserecords/in2u
 
 (very shortly a loader will be provided that loads all the files that make up the arts project and this will correspond to the json file or BOT_CONFIG provided) 
 
-./add_2_rest_server.sh 
+./add_2_restServer.sh 
 
 will add all the urls you specify in url_defs file
