@@ -29,3 +29,8 @@ command #> ./rest_server_test.sh https://soundcloud.com/ringroserecords/in2u
 ./add_2_restServer.sh 
 
 will add all the urls you specify in url_defs file
+
+Running Jupyter Notebook
+=========================
+there are 2 colab notebooks one will work with the re-direct service Copy of AIML_UrlBotFather.ipynb
+the other you can test direct from the colab without running the re-direction server Copy of AIML_DirectBotFather.ipynb 
