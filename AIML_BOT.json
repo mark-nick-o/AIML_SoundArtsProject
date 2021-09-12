@@ -1,0 +1,421 @@
+{
+   "intents": {
+      "hello": {
+         "examples": [
+		    "hello",
+		    "good day",
+		    "morning",
+		    "evening"
+         ],
+         "responses": [
+            "welcome : please ask for a genre to view one word or phrase should do",
+            "welcome : type the vibe you are looking for man ! ",
+            "yo ask me for a video type and ill suggest one via a link !"
+         ]
+      },
+      "хай": {
+         "examples": [
+		    "yo",
+            "привет!",
+            "хей",
+            "хай"
+         ],
+         "responses": [
+            "прив",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "rock": {
+         "examples": [
+            "rock",
+            "heavy",
+            "thrash",
+	        "metal",
+	        "death",
+	        "punk",
+            "electric guitar"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=wIt3hhTY5Kc",
+            "https://www.youtube.com/watch?v=aZ24cVxSwug",
+			"https://www.youtube.com/watch?v=YA1O7ba2Lss",
+            "рад вас видеть!"
+         ]
+      },
+      "house": {
+         "examples": [
+            "garage",
+            "house",
+            "casa",
+            "maison",
+            "haus"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=ArDgtO9vpvo",
+            "https://www.youtube.com/watch?v=M52EbqiDPDU",
+			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
+			"https://www.youtube.com/watch?v=nVuFbPlvExg",
+			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
+			"https://www.youtube.com/watch?v=M52EbqiDPDU",
+			"https://www.youtube.com/watch?v=L_D2jRSiWCw",
+			"https://www.youtube.com/watch?v=DlwOYc1e96s",
+            "рад вас видеть!"
+         ]
+      },
+      "short": {
+         "examples": [
+            "short",
+            "clip",
+            "preview"
+         ],
+         "responses": [
+			"https://www.youtube.com/watch?v=L_D2jRSiWCw",
+			"https://www.youtube.com/watch?v=YA1O7ba2Lss",
+            "рад вас видеть!"
+         ]
+      },
+      "future garage": {
+         "examples": [
+            "future garage",
+            "garage",
+            "future bass"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=ArDgtO9vpvo",
+            "https://www.youtube.com/watch?v=ZOUHqBOVqzw",
+			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
+            "рад вас видеть!"
+         ]
+      },
+      "hip hop": {
+         "examples": [
+            "hip Hop",
+            "rap",
+            "soul",
+            "rapper"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=u9BTLPqHB3A",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "piano": {
+         "examples": [
+            "piano",
+            "classical",
+            "mellow",
+            "transciption"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+            "https://www.youtube.com/watch?v=O7lyic-Nwwg",
+			"https://www.youtube.com/watch?v=lCSHNheOp3M",
+			"https://www.youtube.com/watch?v=wiGDb1ImOPk",
+			"https://www.youtube.com/watch?v=nVuFbPlvExg",
+			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
+			"https://www.youtube.com/watch?v=DlwOYc1e96s",
+            "рад вас видеть!"
+         ]
+      },
+      "synth": {
+         "examples": [
+            "synth",
+            "electro",
+            "electronic"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=PrEw5ugfPsI",
+            "https://www.youtube.com/watch?v=ZOUHqBOVqzw",
+			"https://www.youtube.com/watch?v=2-aM5YZ-9eM",
+			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
+			"https://www.youtube.com/watch?v=nVuFbPlvExg",
+			"https://www.youtube.com/watch?v=oHfiSYYrwek",
+            "рад вас видеть!"
+         ]
+      },
+      "techno": {
+         "examples": [
+            "techno",
+            "rave",
+            "bass heavy"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
+            "https://www.youtube.com/watch?v=eqnhZcuaBQ0",
+            "рад вас видеть!"
+         ]
+      },
+      "disco": {
+         "examples": [
+            "disco",
+            "funk",
+            "northern soul",
+            "groove"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=M52EbqiDPDU",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "drum and bass": {
+         "examples": [
+            "drum n bass",
+            "drum and bass",
+            "ragga",
+            "breakbeat"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=wiGDb1ImOPk",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "jazz": {
+         "examples": [
+            "jazz",
+            "improvisation",
+            "accapella"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+            "https://www.youtube.com/watch?v=lCSHNheOp3M",
+			"https://www.youtube.com/watch?v=2-aM5YZ-9eM",
+			"https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
+			"https://www.youtube.com/watch?v=wiGDb1ImOPk",
+			"https://www.youtube.com/watch?v=oHfiSYYrwek",
+			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
+			"https://www.youtube.com/watch?v=DlwOYc1e96s",
+            "рад вас видеть!"
+         ]
+      },
+      "guitar": {
+         "examples": [
+            "guitar"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=ArDgtO9vpvo",
+            "https://www.youtube.com/watch?v=wIt3hhTY5Kc",
+			"https://www.youtube.com/watch?v=aZ24cVxSwug",
+            "рад вас видеть!"
+         ]
+      },
+      "reggae": {
+         "examples": [
+            "rasta",
+            "reggae",
+            "afro"
+         ],
+         "responses": [
+            "прив",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "asian": {
+         "examples": [
+            "asian",
+            "oriental",
+            "japanese"
+         ],
+         "responses": [
+            "прив",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "machine learning synth": {
+         "examples": [
+            "magenta",
+            "machine learning synth",
+            "hybridNsynth"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+            "https://www.youtube.com/watch?v=oHfiSYYrwek"
+         ]
+      },
+      "gan": {
+         "examples": [
+            "style gan",
+            "transformer",
+            "gpt"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=ZOUHqBOVqzw",
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+			"https://www.youtube.com/watch?v=lCSHNheOp3M",
+			"https://www.youtube.com/watch?v=wiGDb1ImOPk",
+			"https://www.youtube.com/watch?v=Pq-DsYrSrdg",
+			"https://www.youtube.com/watch?v=wIt3hhTY5Kc",
+			"https://www.youtube.com/watch?v=oHfiSYYrwek",
+			"https://www.youtube.com/watch?v=eqnhZcuaBQ0",
+			"https://www.youtube.com/watch?v=DlwOYc1e96s",
+			"https://www.youtube.com/watch?v=YA1O7ba2Lss",
+            "https://www.youtube.com/watch?v=O7lyic-Nwwg"
+         ]
+      },
+      "musenet": {
+         "examples": [
+            "muse net",
+            "transformer",
+            "gpt"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=O7lyic-Nwwg",
+            "https://www.youtube.com/watch?v=lCSHNheOp3M"
+         ]
+      },
+      "anime": {
+         "examples": [
+            "anime",
+            "cartoon",
+            "animation"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=u9BTLPqHB3A",
+            "https://www.youtube.com/watch?v=Pq-DsYrSrdg",
+			"https://www.youtube.com/watch?v=aZ24cVxSwug",
+			"https://www.youtube.com/watch?v=GGk_KrRyXLo",
+			"https://www.youtube.com/watch?v=nVuFbPlvExg",
+			"https://www.youtube.com/watch?v=eqnhZcuaBQ0",
+            "рад вас видеть!"
+         ]
+      },
+      "photo": {
+         "examples": [
+            "photograph",
+            "pictures",
+            "slides"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=PrEw5ugfPsI",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "modern art": {
+         "examples": [
+            "modern art",
+            "contemporary",
+            "impressionist"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=ZOUHqBOVqzw",
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+			"https://www.youtube.com/watch?v=lCSHNheOp3M",
+			"https://www.youtube.com/watch?v=wiGDb1ImOPk",
+			"https://www.youtube.com/watch?v=aZ24cVxSwug",
+			"https://www.youtube.com/watch?v=nVuFbPlvExg",
+			"https://www.youtube.com/watch?v=oHfiSYYrwek",
+			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
+            "рад вас видеть!"
+         ]
+      },
+      "birds": {
+         "examples": [
+            "birds"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=DlwOYc1e96s"
+         ]
+      },  
+      "classical art": {
+         "examples": [
+            "classical art",
+            "portrait",
+            "sketch",
+            "drawing"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
+            "добрый день",
+            "рад вас видеть!"
+         ]
+      },
+      "aiml": {
+         "examples": [
+            "aiml",
+            "artificial intellience",
+            "machine learning",
+            "demetrius"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=u9BTLPqHB3A",
+            "https://www.youtube.com/watch?v=Y7wTgaj1ytE",
+			"https://www.youtube.com/watch?v=lCSHNheOp3M",
+			"https://www.youtube.com/watch?v=Pq-DsYrSrdg",
+			"https://www.youtube.com/watch?v=GGk_KrRyXLo",
+			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
+            "рад вас видеть!"
+         ]
+      },
+      "machine vision": {
+         "examples": [
+            "vision",
+            "animal recognition"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=M52EbqiDPDU"
+         ]
+      },
+      "comedy": {
+         "examples": [
+            "comedy",
+            "humour",
+            "jokes"
+         ],
+         "responses": [
+		    "https://www.youtube.com/watch?v=Pq-DsYrSrdg",
+			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
+            "https://www.youtube.com/watch?v=O7lyic-Nwwg"
+         ]
+      },
+      "fashion": {
+         "examples": [
+            "fashion",
+            "styling",
+            "clothes"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=O7lyic-Nwwg"
+         ]
+      },
+      "bye": {
+         "examples": [
+            "bye!",
+            "see ya",
+            "ciao",
+            "goodbye"
+         ],
+         "responses": [
+            "bye",
+            "thanks see ya again",
+            "ciao amigo",
+            "good bye dude!!"
+         ]
+      }
+      "пока": {
+         "examples": [
+            "пока!",
+            "увидимся",
+            "чао..."
+         ],
+         "responses": [
+            "покеда",
+            "до свиданья",
+            "сайонара!!"
+         ]
+      }
+    },
+	"failure_phrases": [
+      "Please try something more related to AIML this bot has been set up for the project",
+      "You should try a genre like piano guitar rock house techno, or an art type like style gan",
+      "I have only been set up for the AIML hackathon related theme",
+      "You could try search one of these sites https://www.youtube.com/channel/UCHcfVciL_QM815w6_4THePA or ",
+      "Ask a question related to music genre or art style e.g. house or cartoon",
+      "not sure dude try again with another explanation or go to the home site "
+	}
+}
