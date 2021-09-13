@@ -34,3 +34,11 @@ Running Jupyter Notebook
 =========================
 there are 2 colab notebooks one will work with the re-direct service Copy of AIML_UrlBotFather.ipynb
 the other you can test direct from the colab without running the re-direction server Copy of AIML_DirectBotFather.ipynb 
+
+Deploy
+======
+Contains dockerfiles for deployment on AWS
+
+ArtGens
+=======
+Contans the scripts i made for communicating with speech engines e.g. MIMI for use on audio track, as well as other scripts i made for listening to voice or speaking back, as well as other openCV work i have done to manipulate picture files or create animation
