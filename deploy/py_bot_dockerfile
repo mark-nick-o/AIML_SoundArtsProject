@@ -4,6 +4,12 @@ WORKDIR /usr/src/app/
 # copy project
 COPY . /usr/src/app/
 # install dependencies
-RUN pip install --user aiogram
+#RUN pip install --user aiogram
 # run app
-CMD ["python", "bot.py"]
+#CMD ["python", "bot_deploy.py"]
+RUN pip install scikit-learn
+RUN pip install nltk
+RUN pip install json
+RUN pip install python-telegram-bot --upgrade
+# run app
+CMD ["python", "deploy_bot.py"]
