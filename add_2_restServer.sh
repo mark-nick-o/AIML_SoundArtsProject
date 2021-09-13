@@ -11,6 +11,9 @@ touch $FHOME/urls_added
 [ $# == 1 ] && [ "$1" == "DEL" ] && [ -f $FHOME/urls_errors ] && rm $FHOME/urls_errors
 touch $FHOME/urls_errors
 field=0
+JSON_FILE=$FHOME/AIML_BOT.json
+REDIR_BOT_JFILE=$FHOME/REDIR_BOT.json
+touch $REDIR_BOT_JFILE
 for line in `cat $FHOME/url_defs`
 do
   if [ "$field" == 1 ]
@@ -23,6 +26,8 @@ do
       echo "$url malformed ERROR" >> $FHOME/urls_errors
     else
       echo "$tags , $url , $numb" >> $FHOME/urls_added
+      # create a new bot file for use with redirection script
+      sed 's/$url/$numb/g' $JSON_FILE >> $REDIR_BOT_JFILE
     fi
    elif [ "$field" == 0 ]
    then
