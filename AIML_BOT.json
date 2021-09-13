@@ -40,13 +40,17 @@
             "https://www.youtube.com/watch?v=wIt3hhTY5Kc",
             "https://www.youtube.com/watch?v=aZ24cVxSwug",
 			"https://www.youtube.com/watch?v=YA1O7ba2Lss",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=FekosNARr78",
+			"https://www.youtube.com/watch?v=t0Wgq0Fo6xU",
+			"https://www.youtube.com/watch?v=xogetgEez7Q",
+			"https://www.youtube.com/watch?v=lWpW_qMMTT0",
+            "https://www.youtube.com/watch?v=JoxRrSEtfPg"
          ]
       },
       "house": {
          "examples": [
             "garage",
-            "house",
+            "house music",
             "casa",
             "maison",
             "haus"
@@ -60,7 +64,19 @@
 			"https://www.youtube.com/watch?v=M52EbqiDPDU",
 			"https://www.youtube.com/watch?v=L_D2jRSiWCw",
 			"https://www.youtube.com/watch?v=DlwOYc1e96s",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=8cPWAPdjywU",
+			"https://www.youtube.com/watch?v=zfcUDyhrwjQ",
+			"https://www.youtube.com/watch?v=ScIYEiLYhSY",
+            "https://www.youtube.com/watch?v=NqznJgWMP5k"
+         ]
+      },
+      "house painting": {
+         "examples": [
+            "brush painted",
+            "house painting"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=lWpW_qMMTT0"
          ]
       },
       "short": {
@@ -72,7 +88,7 @@
          "responses": [
 			"https://www.youtube.com/watch?v=L_D2jRSiWCw",
 			"https://www.youtube.com/watch?v=YA1O7ba2Lss",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=t0Wgq0Fo6xU"
          ]
       },
       "future garage": {
@@ -85,7 +101,9 @@
             "https://www.youtube.com/watch?v=ArDgtO9vpvo",
             "https://www.youtube.com/watch?v=ZOUHqBOVqzw",
 			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=F7fy9QmXbPw",
+			"https://www.youtube.com/watch?v=hTWZNL9jgt4",
+			"https://www.youtube.com/watch?v=8cPWAPdjywU"
          ]
       },
       "hip hop": {
@@ -96,9 +114,7 @@
             "rapper"
          ],
          "responses": [
-            "https://www.youtube.com/watch?v=u9BTLPqHB3A",
-            "добрый день",
-            "рад вас видеть!"
+            "https://www.youtube.com/watch?v=u9BTLPqHB3A"
          ]
       },
       "piano": {
@@ -116,7 +132,7 @@
 			"https://www.youtube.com/watch?v=nVuFbPlvExg",
 			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
 			"https://www.youtube.com/watch?v=DlwOYc1e96s",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=hJD61RdXRVI"
          ]
       },
       "synth": {
@@ -132,7 +148,7 @@
 			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
 			"https://www.youtube.com/watch?v=nVuFbPlvExg",
 			"https://www.youtube.com/watch?v=oHfiSYYrwek",
-            "рад вас видеть!"
+            "https://www.youtube.com/watch?v=XjrNrz7_7g8"
          ]
       },
       "techno": {
@@ -143,8 +159,8 @@
          ],
          "responses": [
             "https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
-            "https://www.youtube.com/watch?v=eqnhZcuaBQ0",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=ScIYEiLYhSY",
+            "https://www.youtube.com/watch?v=eqnhZcuaBQ0"
          ]
       },
       "disco": {
@@ -155,9 +171,11 @@
             "groove"
          ],
          "responses": [
-            "https://www.youtube.com/watch?v=M52EbqiDPDU",
-            "добрый день",
-            "рад вас видеть!"
+		    "https://www.youtube.com/watch?v=cTS1Qg5KQqs",
+			"https://www.youtube.com/watch?v=bjw35PAJ7rM",
+			"https://www.youtube.com/watch?v=zfcUDyhrwjQ",
+			"https://www.youtube.com/watch?v=KUkMWvoFSOg",
+            "https://www.youtube.com/watch?v=M52EbqiDPDU"
          ]
       },
       "drum and bass": {
@@ -168,9 +186,9 @@
             "breakbeat"
          ],
          "responses": [
-            "https://www.youtube.com/watch?v=wiGDb1ImOPk",
-            "добрый день",
-            "рад вас видеть!"
+		    "https://www.youtube.com/watch?v=GGk_KrRyXLo",
+			"https://www.youtube.com/watch?v=S5O_6-RwHcI",
+            "https://www.youtube.com/watch?v=wiGDb1ImOPk"
          ]
       },
       "jazz": {
@@ -187,8 +205,8 @@
 			"https://www.youtube.com/watch?v=wiGDb1ImOPk",
 			"https://www.youtube.com/watch?v=oHfiSYYrwek",
 			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
-			"https://www.youtube.com/watch?v=DlwOYc1e96s",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=XjrNrz7_7g8",
+			"https://www.youtube.com/watch?v=DlwOYc1e96s"
          ]
       },
       "guitar": {
@@ -199,7 +217,10 @@
             "https://www.youtube.com/watch?v=ArDgtO9vpvo",
             "https://www.youtube.com/watch?v=wIt3hhTY5Kc",
 			"https://www.youtube.com/watch?v=aZ24cVxSwug",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=FekosNARr78",
+			"https://www.youtube.com/watch?v=NqznJgWMP5k",
+			"https://www.youtube.com/watch?v=RPDBoIOM_yE",
+            "https://www.youtube.com/watch?v=JoxRrSEtfPg"
          ]
       },
       "reggae": {
@@ -209,9 +230,8 @@
             "afro"
          ],
          "responses": [
-            "прив",
-            "добрый день",
-            "рад вас видеть!"
+            "https://www.youtube.com/watch?v=S5O_6-RwHcI",
+            "https://www.youtube.com/watch?v=BqJBP8HScLU"
          ]
       },
       "asian": {
@@ -221,9 +241,9 @@
             "japanese"
          ],
          "responses": [
-            "прив",
-            "добрый день",
-            "рад вас видеть!"
+            "https://www.youtube.com/watch?v=Pq-DsYrSrdg",
+			"https://www.youtube.com/watch?v=BqJBP8HScLU",
+            "https://www.youtube.com/watch?v=GGk_KrRyXLo"
          ]
       },
       "machine learning synth": {
@@ -280,8 +300,7 @@
 			"https://www.youtube.com/watch?v=aZ24cVxSwug",
 			"https://www.youtube.com/watch?v=GGk_KrRyXLo",
 			"https://www.youtube.com/watch?v=nVuFbPlvExg",
-			"https://www.youtube.com/watch?v=eqnhZcuaBQ0",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=eqnhZcuaBQ0"
          ]
       },
       "photo": {
@@ -291,9 +310,9 @@
             "slides"
          ],
          "responses": [
-            "https://www.youtube.com/watch?v=PrEw5ugfPsI",
-            "добрый день",
-            "рад вас видеть!"
+		    "https://www.youtube.com/watch?v=lWpW_qMMTT0",
+			"https://www.youtube.com/watch?v=KUkMWvoFSOg",
+            "https://www.youtube.com/watch?v=PrEw5ugfPsI"
          ]
       },
       "modern art": {
@@ -311,7 +330,11 @@
 			"https://www.youtube.com/watch?v=nVuFbPlvExg",
 			"https://www.youtube.com/watch?v=oHfiSYYrwek",
 			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=RPDBoIOM_yE",
+			"https://www.youtube.com/watch?v=cTS1Qg5KQqs",
+			"https://www.youtube.com/watch?v=bjw35PAJ7rM",
+			"https://www.youtube.com/watch?v=F7fy9QmXbPw",
+			"https://www.youtube.com/watch?v=xogetgEez7Q"
          ]
       },
       "birds": {
@@ -331,8 +354,7 @@
          ],
          "responses": [
             "https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
-            "добрый день",
-            "рад вас видеть!"
+			"https://www.youtube.com/watch?v=8cPWAPdjywU"
          ]
       },
       "aiml": {
@@ -349,7 +371,7 @@
 			"https://www.youtube.com/watch?v=Pq-DsYrSrdg",
 			"https://www.youtube.com/watch?v=GGk_KrRyXLo",
 			"https://www.youtube.com/watch?v=pFyIxYwTm3Y",
-            "рад вас видеть!"
+            "https://www.youtube.com/watch?v=xogetgEez7Q"
          ]
       },
       "machine vision": {
@@ -358,6 +380,11 @@
             "animal recognition"
          ],
          "responses": [
+		    "https://www.youtube.com/watch?v=8cPWAPdjywU",
+			"https://www.youtube.com/watch?v=F7fy9QmXbPw",
+			"https://www.youtube.com/watch?v=zfcUDyhrwjQ",
+			"https://www.youtube.com/watch?v=ScIYEiLYhSY",
+			"https://www.youtube.com/watch?v=BqJBP8HScLU",
             "https://www.youtube.com/watch?v=M52EbqiDPDU"
          ]
       },
@@ -370,7 +397,25 @@
          "responses": [
 		    "https://www.youtube.com/watch?v=Pq-DsYrSrdg",
 			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
+			"https://www.youtube.com/watch?v=NqznJgWMP5k",
+			"https://www.youtube.com/watch?v=JoxRrSEtfPg",
+			"https://www.youtube.com/watch?v=hTWZNL9jgt4",
+			"https://www.youtube.com/watch?v=zfcUDyhrwjQ",
             "https://www.youtube.com/watch?v=O7lyic-Nwwg"
+         ]
+      },
+      "cars": {
+         "examples": [
+            "cars",
+            "motors",
+			"autos",
+			"automobile",
+            "vehicles"
+         ],
+         "responses": [
+		    "https://www.youtube.com/watch?v=bjw35PAJ7rM",
+			"https://www.youtube.com/watch?v=KUkMWvoFSOg",
+		    "https://www.youtube.com/watch?v=NqznJgWMP5k"
          ]
       },
       "fashion": {
@@ -380,7 +425,30 @@
             "clothes"
          ],
          "responses": [
+		    "https://www.youtube.com/watch?v=bjw35PAJ7rM",
             "https://www.youtube.com/watch?v=O7lyic-Nwwg"
+         ]
+      },
+      "animal": {
+         "examples": [
+            "cat",
+            "dog",
+            "horse"
+         ],
+         "responses": [
+            "https://www.youtube.com/watch?v=FekosNARr78"
+         ]
+      },
+      "more": {
+         "examples": [
+            "more",
+            "next",
+            "another one",
+            "gime more"
+         ],
+         "responses": [
+            "please renter the keyword",
+            "just repeat the keyword for another random selection on that vibe dude!!"
          ]
       },
       "bye": {
@@ -396,7 +464,7 @@
             "ciao amigo",
             "good bye dude!!"
          ]
-      }
+      },
       "пока": {
          "examples": [
             "пока!",
