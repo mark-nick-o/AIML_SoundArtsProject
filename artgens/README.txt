@@ -7,3 +7,5 @@ mimi text to speach was used to sepak japanese on a sound track as part of the p
 
 Also there is a png animator which will make transparent pose pictures and allow the programming of animation frames via the object class for each png in memory
 this was used for a simple video, while this is not AIML i thought it relevant to include as it was used in the production of 1 video
+
+I have also added some incompleted code for a facebook bot
