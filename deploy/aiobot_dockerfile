@@ -1,0 +1,12 @@
+FROM python:3.8
+# set work directory
+WORKDIR /usr/src/app/
+# copy project
+COPY . /usr/src/app/
+# install dependencies
+RUN pip install scikit-learn
+RUN pip install nltk
+RUN pip install json
+RUN pip install --user aiogram
+# run app
+CMD ["python", "aiobot_deploy.py"]
