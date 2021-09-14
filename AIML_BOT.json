@@ -1,4 +1,6 @@
 {
+   "threshold": 0.6,
+   
    "intents": {
       "hello": {
          "examples": [
