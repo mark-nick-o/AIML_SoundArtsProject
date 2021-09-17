@@ -105,6 +105,7 @@
 			"https://www.youtube.com/watch?v=NsCAQ9tSzx0",
 			"https://www.youtube.com/watch?v=F7fy9QmXbPw",
 			"https://www.youtube.com/watch?v=hTWZNL9jgt4",
+		 "https://www.youtube.com/watch?v=lsnrtolc3Lk",
 			"https://www.youtube.com/watch?v=8cPWAPdjywU"
          ]
       },
@@ -116,6 +117,7 @@
             "rapper"
          ],
          "responses": [
+	    "https://www.youtube.com/watch?v=lsnrtolc3Lk",
             "https://www.youtube.com/watch?v=u9BTLPqHB3A"
          ]
       },
@@ -161,7 +163,8 @@
          ],
          "responses": [
             "https://www.youtube.com/watch?v=Bv9aRMEeWUQ",
-			"https://www.youtube.com/watch?v=ScIYEiLYhSY",
+	    "https://www.youtube.com/watch?v=ScIYEiLYhSY",
+	    "https://www.youtube.com/watch?v=TjpZmRQ3NVU",
             "https://www.youtube.com/watch?v=eqnhZcuaBQ0"
          ]
       },
@@ -245,6 +248,7 @@
          "responses": [
             "https://www.youtube.com/watch?v=Pq-DsYrSrdg",
 			"https://www.youtube.com/watch?v=BqJBP8HScLU",
+		 "https://www.youtube.com/watch?v=lsnrtolc3Lk",
             "https://www.youtube.com/watch?v=GGk_KrRyXLo"
          ]
       },
@@ -416,7 +420,8 @@
          ],
          "responses": [
 		    "https://www.youtube.com/watch?v=bjw35PAJ7rM",
-			"https://www.youtube.com/watch?v=KUkMWvoFSOg",
+		     "https://www.youtube.com/watch?v=KUkMWvoFSOg",
+		    "https://www.youtube.com/watch?v=TjpZmRQ3NVU",
 		    "https://www.youtube.com/watch?v=NqznJgWMP5k"
          ]
       },
@@ -427,7 +432,8 @@
             "clothes"
          ],
          "responses": [
-		    "https://www.youtube.com/watch?v=bjw35PAJ7rM",
+	    "https://www.youtube.com/watch?v=bjw35PAJ7rM",
+	    "https://www.youtube.com/watch?v=TjpZmRQ3NVU",
             "https://www.youtube.com/watch?v=O7lyic-Nwwg"
          ]
       },
