@@ -38,6 +38,7 @@ the other you can test direct from the colab without running the re-direction se
 Deploy
 ======
 Contains dockerfiles for deployment on AWS
+
 Ive added a listen2speechBot.py which can listen to voice and then reply with the url which best matched the request made or a voice reply sugesting what to do
 
 ArtGens
