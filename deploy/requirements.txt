@@ -1,0 +1,6 @@
+nltk==3.7
+regex==2022.8.17
+scikit-learn==1.1.2
+json5==0.9.5
+jsonschema==3.2.0
+xmljson==0.2.1
